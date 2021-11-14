@@ -1,9 +1,11 @@
 # Usage
-```
+```sh
 $ git clone https://github.com/void-linux/void-packages
 $ cd void-packages
+$ git clone https://github.com/monke0192/eww-template
 $ ./xbps-src binary-bootstrap
-$ git clone https://github.com/monke0192/eww-template srcpkgs/eww
+$ cp -r eww-template/eww srcpkgs/eww # for X11 users idk
+$ cp -r eww-template/eww-wayland srcpkgs/eww # for wayland users
 $ ./xbps-src pkg eww
 ```
 # Installation
