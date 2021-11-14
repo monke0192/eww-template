@@ -2,20 +2,21 @@
 pkgname=eww
 version=0.2.0
 revision=1
+makedepends="gtk+3-devel glib-devel pkg-config rustup"
 short_desc="ELKowars wacky widgets"
 maintainer="Aaron Chen <monke@monke.moe>"
 license="MIT"
 homepage="https://elkowar.github.io/eww"
 distfiles="https://github.com/elkowar/eww/archive/refs/tags/v${version}.tar.gz"
 checksum="c384a6c2f611b3b4ffb88a0d5ec14130db53aebae6043d535ace59546a524299"
-makedepends="gtk+3-devel glib-devel pkg-config rustup"
 
-do_build () {
-    rustup-init -y --default-toolchain nightly
-    source $HOME/.cargo/env
-    cargo build --release
+do_build() {
+	rustup-init -y --default-toolchain nightly
+	source $HOME/.cargo/env
+	cargo build --release
 }
 
 do_install() {
-    vbin target/release/eww
+	vbin target/release/eww
+	vlicense LICENCE
 }
