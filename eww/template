@@ -8,7 +8,7 @@ maintainer="Aaron Chen <monke@monke.moe>"
 license="MIT"
 homepage="https://elkowar.github.io/eww"
 distfiles="https://github.com/elkowar/eww/archive/refs/tags/v${version}.tar.gz"
-checksum="c384a6c2f611b3b4ffb88a0d5ec14130db53aebae6043d535ace59546a524299"
+checksum="d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
 
 do_build() {
 	rustup-init -y --default-toolchain nightly
