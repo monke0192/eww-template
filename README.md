@@ -4,7 +4,7 @@ $ git clone https://github.com/void-linux/void-packages
 $ cd void-packages
 $ git clone https://github.com/monke0192/eww-template
 $ ./xbps-src binary-bootstrap
-$ cp -r eww-template/eww srcpkgs/eww # for X11 users idk
+$ cp -r eww-template/eww srcpkgs/eww # for Xorg & X11
 $ cp -r eww-template/eww-wayland srcpkgs/eww # for wayland users
 $ ./xbps-src pkg eww
 ```
