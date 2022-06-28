@@ -2,7 +2,7 @@
 pkgname=eww
 version=0.3.0
 revision=1
-makedepends="gtk+3-devel glib-devel pkg-config rustup"
+makedepends="gtk+3-devel glib-devel pkg-config rustup pango-devel atk-devel gdk-pixbuf-devel cairo-devel"
 short_desc="ELKowars wacky widgets"
 maintainer="Aaron Chen <monke@monke.moe>"
 license="MIT"
